@@ -442,15 +442,14 @@ Coins have a rich history, which makes collecting a rewarding hobby. People coll
     <!-- SCRIPT FOR FORM SUBMISSION -->
     <script>
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbwGCux1wys0uhImUgUhbrq6UcmEe07lKfahGrMG1sSix80DX76FhrsjLvXCSvdHVfiB-A/exec';
-
+        'https://script.google.com/macros/s/AKfycbwZOOVC213eb14JuQDjHKr5Eu3WdyLdeWXNBn0Z3X1iP0gGPs6vwDd91pvxkLn8Z_4dsQ/exec';
       const form = document.forms["google-sheet"];
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) =>{
-                alert("Thanks for Contacting us..! We Will Contact You Soon...")
+                alert("Thanks for contacting me! I'll reach out to you!")
               }
           )
           .catch((error) => console.error("Error!", error.message));
